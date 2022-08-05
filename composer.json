@@ -4,7 +4,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Mmeyer2k\\LaravelMailFileDriver\\": "src/"
+            "Mmeyer2k\\LaravelMailFile\\": "src/"
         }
     },
     "require": {
