@@ -3,7 +3,7 @@ A Laravel Mail driver that saves messages to disk for testing/ci purposes.
 
 ## Install
 ```bash
-composer require mmeyer2k/laravel-mail-file-driver 'dev-main'
+composer require mmeyer2k/laravel-mail-file-driver '0.0.1'
 ```
 
 ## Replace default laravel mail manager in /config/app.php
@@ -20,13 +20,13 @@ return [
 ];
 ```
 
-
-## Add to env
+## Add to .env
 ```ini
 MAIL_DRIVER=file
 ```
 
-## Custom save location in env
+## Custom storage location in .env
+By default, messages are saved to path returned by `sys_get_temp_dir()`.
 ```ini
 MAIL_FILE_PATH=/path/to/storage
 ```
